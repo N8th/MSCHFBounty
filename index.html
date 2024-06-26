@@ -14,16 +14,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
+        height: 100vh;
         position: relative;
       }
       .container {
-        width: 100%;
         max-width: 800px;
         padding: 10px;
         border: 2px solid #000000;
         background-color: #b0c4b1;
         text-align: center;
+        z-index: 1;
       }
       .manifesto h1,
       .manifesto h2,
@@ -33,23 +33,40 @@
         margin: 10px 0;
       }
       .footer-link {
-        font-size: 16px;
+        font-size: 18px;
+        margin: 10px 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      @media (max-width: 600px) {
+        .container {
+          width: 95%;
+          padding: 5px;
+        }
+        .manifesto h1,
+        .manifesto h2,
+        .manifesto p,
+        .manifesto h3,
+        .manifesto ol {
+          margin: 5px 0;
+        }
+        .footer-link {
+          font-size: 16px;
+        }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <header style="border-bottom: 2px solid #000000; padding-bottom: 5px">
-        <div style="font-size: 20px">
+      <header style="border-bottom: 2px solid #000000; padding-bottom: 10px">
+        <div style="font-size: 24px">
           <span>COMING SOON</span>
         </div>
       </header>
       <main>
-        <img
-          src="./BountyGif.gif"
-          alt="MSCHF Bounty Animated Header"
-          style="width: 100%; height: auto; margin: 10px 0"
-        />
+        <img src="./BountyGif.gif" alt="MSCHF Bounty Animated Header" />
         <div class="manifesto">
           <h1>MSCHF Bounty</h1>
           <h2>COMING SOON</h2>
@@ -61,17 +78,11 @@
           </p>
           <div>
             <h3>How It Works</h3>
-            <ol
-              style="
-                text-align: left;
-                margin: 0 auto;
-                display: inline-block;
-                padding-left: 20px;
-              "
-            >
+            <ol style="text-align: left; margin: 0 auto; display: inline-block">
               <li>
-                Submit a bounty on another player by paying $1 through Venmo to
-                @MSCHFBounty along with the name of your target.
+                Worried about being voted out? Submit a bounty on another player
+                by paying $1 through Venmo to @MSCHFBounty along with the name
+                of your target.
               </li>
               <li>
                 Include an anonymous message explaining why others should vote
@@ -97,12 +108,12 @@
           </p>
         </div>
       </main>
-      <footer style="border-top: 2px solid #000000; padding-top: 5px">
+      <footer style="border-top: 2px solid #000000; padding-top: 10px">
         <div class="footer-link">
           <a
             href="https://venmo.com/MSCHFBounty"
             style="color: inherit; text-decoration: none"
-            >Submit a player for $1</a
+            >Submit a player for $1!</a
           >
         </div>
       </footer>
