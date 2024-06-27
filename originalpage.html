@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MSCHF Bounty</title>
+    <title>MSCHF Bounty - Coming Soon</title>
     <style>
       body {
         font-family: "Courier New", Courier, monospace;
@@ -14,8 +14,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        min-height: 100vh;
+        height: 100vh;
+        position: relative;
       }
       .container {
         max-width: 800px;
@@ -23,6 +23,7 @@
         border: 2px solid #000000;
         background-color: #b0c4b1;
         text-align: center;
+        z-index: 1;
       }
       .manifesto h1,
       .manifesto h2,
@@ -38,23 +39,6 @@
       img {
         max-width: 100%;
         height: auto;
-      }
-      .hitlist {
-        margin: 20px 0;
-      }
-      .hitlist table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-      .hitlist th,
-      .hitlist td {
-        border: 1px solid #000000;
-        padding: 8px;
-        text-align: center;
-        font-weight: bold;
-      }
-      .hitlist th {
-        background-color: #abbcab;
       }
       @media (max-width: 600px) {
         .container {
@@ -78,49 +62,14 @@
     <div class="container">
       <header style="border-bottom: 2px solid #000000; padding-bottom: 10px">
         <div style="font-size: 24px">
-          <span>MSCHF Bounty</span>
+          <span>COMING SOON</span>
         </div>
       </header>
       <main>
         <img src="./BountyGif.gif" alt="MSCHF Bounty Animated Header" />
         <div class="manifesto">
           <h1>MSCHF Bounty</h1>
-          <div class="hitlist">
-            <h3>The Hitlist</h3>
-            <table>
-              <thead>
-                <tr>
-                  <th>Amount</th>
-                  <th>Name</th>
-                  <th>Description</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>$1</td>
-                  <td>@GABRIEL-WHALEY</td>
-                  <td>THE CEO OF MSCHF MUST GO FIRST</td>
-                </tr>
-                <tr>
-                  <td>$1</td>
-                  <td>@markrad</td>
-                  <td>n/a</td>
-                </tr>
-                <tr>
-                  <td>$1</td>
-                  <td>@voteformeifgay</td>
-                  <td>n/a</td>
-                </tr>
-                <tr>
-                  <td>$1</td>
-                  <td></td>
-                  <td>Homophobic and not funny to me.</td>
-                </tr>
-                <!-- Add more bounties as needed -->
-              </tbody>
-            </table>
-          </div>
-          <h2>How It Works</h2>
+          <h2>COMING SOON</h2>
           <p>
             Submit a player's name and a small fee to put them on the bounty
             board. Your submission will be anonymous, and you can include a
@@ -128,12 +77,12 @@
             you the chance to steer the game and protect yourself.
           </p>
           <div>
-            <h3>Instructions</h3>
+            <h3>How It Works</h3>
             <ol style="text-align: left; margin: 0 auto; display: inline-block">
               <li>
                 Worried about being voted out? Submit a bounty on another player
-                by paying $1 through Venmo to <b>@MSCHFBounty</b> along with the
-                name of your target.
+                by paying $1 through Venmo to <b>@MSCHFBounty</b> along with the name
+                of your target.
               </li>
               <li>
                 Include an anonymous message explaining why others should vote
@@ -153,24 +102,19 @@
             This system helps you stay in the game longer by directing attention
             to other players.
           </p>
+          <p>
+            <strong>Note:</strong> This page will be updated with the first hit
+            list on June 27 at 1 PM.
+          </p>
         </div>
       </main>
-      <footer
-        style="
-          border-top: 2px solid #000000;
-          padding-top: 10px;
-          margin-bottom: 15vh;
-        "
-      >
-        <div style="text-align: center">
-          <a
-            href="https://venmo.com/MSCHFBounty"
-            style="color: inherit; text-decoration: none"
-          >
-            <b>Click here to submit a player for $1!</b>
-          </a>
-        </div>
-      </footer>
+<footer style="border-top: 2px solid #000000; padding-top: 10px; margin-bottom: 15vh;">
+      <div style="text-align: center;">
+        <a href="https://venmo.com/MSCHFBounty" style="color: inherit; text-decoration: none;">
+          <b>Click here to submit a player for $1!</b>
+        </a>
+      </div>
+    </footer>
     </div>
   </body>
 </html>
