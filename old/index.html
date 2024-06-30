@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="icon" type="image/png" href="./crown.png" />
+    <title>MSCHF Bounty</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+        background-color: #d0d0b5;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 800px;
+        padding: 10px;
+        border: 2px solid #000000;
+        background-color: #b0c4b1;
+        text-align: center;
+      }
+      .manifesto h1,
+      .manifesto h2,
+      .manifesto p,
+      .manifesto h3,
+      .manifesto ol {
+        margin: 10px 0;
+      }
+      .footer-link {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .hitlist {
+        margin: 20px 0;
+      }
+      .hitlist table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .hitlist th,
+      .hitlist td {
+        border: 1px solid #000000;
+        padding: 8px;
+        text-align: center;
+        font-weight: bold;
+      }
+      .hitlist th {
+        background-color: #abbcab;
+      }
+      @media (max-width: 600px) {
+        .container {
+          width: 95%;
+          padding: 5px;
+        }
+        .manifesto h1,
+        .manifesto h2,
+        .manifesto p,
+        .manifesto h3,
+        .manifesto ol {
+          margin: 5px 0;
+        }
+        .footer-link {
+          font-size: 16px;
+        }
+      }
+      .hitlist-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 10px;
+      }
+      .hitlist-header h2 {
+        margin: 0;
+      }
+      #refresh-button {
+        background-color: #333;
+        color: #fff;
+        border: 2px solid #000;
+        padding: 3px 20px;
+        font-family: "Courier New", Courier, monospace;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .refresh {
+        background-color: #333;
+        color: #fff;
+        border: 2px solid #000;
+        padding: 3px 20px;
+        font-family: "Courier New", Courier, monospace;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="margin-top: 3vh; margin-bottom: 15vh">
+      <header style="border-bottom: 2px solid #000000; padding-bottom: 10px">
+        <div style="font-size: 24px">
+          <span>MSCHF Bounty</span>
+        </div>
+      </header>
+      <main>
+        <img src="./BountyGif.gif" alt="MSCHF Bounty Animated Header" />
+        <div class="manifesto">
+          <h1>MSCHF Bounty</h1>
+          <div class="hitlist">
+            <div class="hitlist-header">
+              <h2>The Hitlist</h2>
+            </div>
+            <button id="refresh-button" onclick="refreshTable()">
+              Refresh List
+            </button>
+            <button
+              class="refresh"
+              onclick="window.location.href='https://venmo.com/MSCHFBounty'"
+            >
+              Submit a bounty
+            </button>
+            <table style="font-size: 0.6rem">
+              <thead>
+                <tr>
+                  <th>Amount</th>
+                  <th>Name</th>
+                  <th>Message</th>
+                </tr>
+              </thead>
+              <tbody id="hitlist-body">
+                <tr>
+                  <td>$17.00</td>
+                  <td>@blake-bittner</td>
+                  <td>
+                    Final saving grace in attempt to build a prosperous
+                    community, built on trust. I will send out more invitations
+                    to our group, full of developers, who serves you if he gets
+                    voted out. out. - Tropxical.
+                  </td>
+                </tr>
+                <tr>
+                  <td>$10</td>
+                  <td>@anonymous</td>
+                  <td>
+                    <a href="https://discord.gg/MVfeyUnJts"
+                      >https://discord.gg/MVfeyUnJts</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>$9.83</td>
+                  <td>@noodleshack</td>
+                  <td>
+                    Joining multiple alliances and sharing voting strategies. A
+                    snitch and a rube
+                  </td>
+                </tr>
+                <tr>
+                  <td>$5.05</td>
+                  <td>@flewpy</td>
+                  <td>
+                    Member of a trashy discord with unorganized confused dumb
+                    mods. Your mods did this to you @flewpy, love your favorite
+                    ops
+                  </td>
+                </tr>
+                <tr>
+                  <td>$4.20</td>
+                  <td>@shrek2onbluray</td>
+                  <td>
+                    Terrible movie in a terrible format. Get rid of the version
+                    with underscores too.
+                  </td>
+                </tr>
+                <tr>
+                  <td>$1.01</td>
+                  <td>@Christian-Clark143</td>
+                  <td>n/a</td>
+                </tr>
+                <tr>
+                  <td>$1.01</td>
+                  <td>@BrandonOsman</td>
+                  <td>n/a</td>
+                </tr>
+                <tr>
+                  <td>$1.00</td>
+                  <td>@SeanMarcus-LaFebre</td>
+                  <td>n/a</td>
+                </tr>
+                <tr>
+                  <td>$1.00</td>
+                  <td>@porter123456</td>
+                  <td>For bounty I guess and I bought some lunch too</td>
+                </tr>
+
+                <tr style="background-color: #f5b7b7">
+                  <td>
+                    <img
+                      src="./ostracized.png"
+                      style="height: 1.5rem; padding: 0; margin: 0"
+                      alt=""
+                    />
+                  </td>
+                  <td>@Abe-Farley</td>
+                  <td>
+                    25 dollar scamming ass discord mod ld rather put my money
+                    right here as get his ass out
+                  </td>
+                </tr>
+                <tr style="background-color: #f5b7b7">
+                  <td>
+                    <img
+                      src="./ostracized.png"
+                      style="height: 1.5rem; padding: 0; margin: 0"
+                      alt=""
+                    />
+                  </td>
+                  <td>@Justin-Bosco-1</td>
+                  <td>
+                    This guy thinks he's gonna win with strategy, what a rube
+                  </td>
+                </tr>
+                <tr style="background-color: #f5b7b7">
+                  <td>
+                    <img
+                      src="./ostracized.png"
+                      style="height: 1.5rem; padding: 0; margin: 0"
+                      alt=""
+                    />
+                  </td>
+                  <td>@FundsOfAnarchy</td>
+                  <td>incompetent loser</td>
+                </tr>
+                <tr style="background-color: #f5b7b7">
+                  <td>
+                    <img
+                      src="./ostracized.png"
+                      style="height: 1.5rem; padding: 0; margin: 0"
+                      alt=""
+                    />
+                  </td>
+                  <td>@GABRIEL-WHALEY</td>
+                  <td>
+                    Sure, shouldn't the ceo try? But also why should he win?
+                  </td>
+                </tr>
+                <tr style="background-color: #f5b7b7">
+                  <td>
+                    <img
+                      src="./ostracized.png"
+                      style="height: 1.5rem; padding: 0; margin: 0"
+                      alt=""
+                    />
+                  </td>
+                  <td>@official-donald-trump</td>
+                  <td>Kanye 2024</td>
+                </tr>
+                <tr style="background-color: #f5b7b7">
+                  <td>
+                    <img
+                      src="./ostracized.png"
+                      style="height: 1.5rem; padding: 0; margin: 0"
+                      alt=""
+                    />
+                  </td>
+                  <td>@trippiebunny</td>
+                  <td>I hate bunnies....</td>
+                </tr>
+                <tr style="background-color: #f5b7b7">
+                  <td>
+                    <img
+                      src="./ostracized.png"
+                      style="height: 1.5rem; padding: 0; margin: 0"
+                      alt=""
+                    />
+                  </td>
+                  <td>@GABRIEL-WHALEY</td>
+                  <td>CEO MUST GOOO</td>
+                </tr>
+                <tr style="background-color: #f5b7b7">
+                  <td>
+                    <img
+                      src="./ostracized.png"
+                      style="height: 1.5rem; padding: 0; margin: 0"
+                      alt=""
+                    />
+                  </td>
+                  <td>@GABRIEL-WHALEY</td>
+                  <td>Why is the CEO still in this? 😂</td>
+                </tr>
+                <tr style="background-color: #f5b7b7">
+                  <td>
+                    <img
+                      src="./ostracized.png"
+                      style="height: 1.5rem; padding: 0; margin: 0"
+                      alt=""
+                    />
+                  </td>
+                  <td>@GABRIEL-WHALEY</td>
+                  <td>THE CEO OF MSCHF MUST GO FIRST</td>
+                </tr>
+                <tr style="background-color: #f5b7b7">
+                  <td>
+                    <img
+                      src="./ostracized.png"
+                      style="height: 1.5rem; padding: 0; margin: 0"
+                      alt=""
+                    />
+                  </td>
+                  <td>@markrad</td>
+                  <td>Who said he's awesome at all lol</td>
+                </tr>
+                <tr style="background-color: #f5b7b7">
+                  <td>
+                    <img
+                      src="./ostracized.png"
+                      style="height: 1.5rem; padding: 0; margin: 0"
+                      alt=""
+                    />
+                  </td>
+                  <td>@kanyewest</td>
+                  <td>Won't drop Vultures 2</td>
+                </tr>
+                <tr style="background-color: #f5b7b7">
+                  <td>
+                    <img
+                      src="./ostracized.png"
+                      style="height: 1.5rem; padding: 0; margin: 0"
+                      alt=""
+                    />
+                  </td>
+                  <td>@I-NEED-A-NEW-LIVER</td>
+                  <td>n/a</td>
+                </tr>
+                <tr style="background-color: #f5b7b7">
+                  <td>
+                    <img
+                      src="./ostracized.png"
+                      style="height: 1.5rem; padding: 0; margin: 0"
+                      alt=""
+                    />
+                  </td>
+                  <td>@Abe-Farley</td>
+                  <td>
+                    He's recruiting people via Venmo and has a discord that he's
+                    charging $25 each to join. Icky.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <button
+              style="
+                background-color: #333;
+                color: #fff;
+                border: 2px solid #000;
+                padding: 5px 40px;
+                font-family: 'Courier New', Courier, monospace;
+                cursor: pointer;
+                border-radius: 10px;
+                font-size: 18px;
+              "
+              onclick="window.location.href='https://venmo.com/MSCHFBounty'"
+            >
+              Submit a bounty
+            </button>
+          </div>
+          <h2>How It Works</h2>
+          <p>
+            Submit a player's name and a small fee to put them on the bounty
+            board. Your submission will be anonymous, and you can include a
+            message to persuade others. The bounty board refreshes daily, giving
+            you the chance to steer the game and protect yourself.
+          </p>
+          <div>
+            <h3>Instructions</h3>
+            <ol style="text-align: left; margin: 0 auto; display: inline-block">
+              <li>
+                Worried about being voted out? Submit a bounty on another player
+                by paying $ through Venmo to <b>@MSCHFBounty</b> along with the
+                name of your target.
+              </li>
+              <li>
+                Include an anonymous message explaining why others should vote
+                for this player.
+              </li>
+              <li>
+                The bounty and message will appear on the bounty board for
+                everyone to see.
+              </li>
+              <li>
+                Other players, seeing the bounty, may decide to vote for that
+                player instead of you.
+              </li>
+            </ol>
+          </div>
+          <p>
+            This system helps you stay in the game longer by directing attention
+            to other players.
+          </p>
+        </div>
+      </main>
+      <footer style="border-top: 2px solid #000000; padding-top: 10px">
+        <div style="text-align: center">
+          <a
+            href="https://venmo.com/MSCHFBounty"
+            style="color: inherit; text-decoration: none"
+          >
+            <h2>Click here to submit a player!</h2>
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    function generateRandomString(length) {
+      const characters =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+      let result = "";
+      const charactersLength = characters.length;
+      for (let i = 0; i < length; i++) {
+        result += characters.charAt(
+          Math.floor(Math.random() * charactersLength)
+        );
+      }
+      return result;
+    }
+
+    function refreshTable() {
+      const randomString = generateRandomString(15);
+      window.location.href = `https://MSCHFBounty.com/?r=${randomString}`;
+    }
+  </script>
+</html>
