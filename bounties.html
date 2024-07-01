@@ -139,6 +139,30 @@
             >
               Submit a bounty
             </button>
+           <div>
+
+           <button id="refresh-button"
+             style="
+               background-color: #333;
+               color: #fff;
+               border: 2px solid #000;
+               padding: 5px 40px;
+               font-family: 'Courier New', Courier, monospace;
+               cursor: pointer;
+               border-radius: 10px;
+               font-size: 18px;
+             "
+             onclick="window.location.href='./groups.html'"
+           >
+             Join a group
+           </button>
+            
+
+
+
+
+            
+          </div> 
             <table style="font-size: 0.6rem">
               <thead>
                 <tr>
@@ -190,15 +214,6 @@
                   <td>
                     Terrible movie in a terrible format. Get rid of the version
                     with underscores too.
-                  </td>
-                </tr>
-                <tr>
-                  <td>$2.00</td>
-                  <td>@epasticgrampa</td>
-                  <td>
-                    Somethings are too good to be true. In the end he and his
-                    friends will betray you. This is not an opinion, this is a
-                    fact. ~ Adam
                   </td>
                 </tr>
                 <tr>
@@ -394,7 +409,7 @@
             >
               Submit a bounty
             </button>
-          </div>
+         
           <h2>How It Works</h2>
           <p>
             Submit a player's name and a small fee to put them on the bounty
@@ -460,30 +475,5 @@
       const randomString = generateRandomString(15);
       window.location.href = `https://MSCHFBounty.com/?r=${randomString}`;
     }
-  </script>
-  <script>
-    function generateRandomString(length) {
-      const characters =
-        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-      let result = "";
-      const charactersLength = characters.length;
-      for (let i = 0; i < length; i++) {
-        result += characters.charAt(
-          Math.floor(Math.random() * charactersLength)
-        );
-      }
-      return result;
-    }
-
-    function refreshTable() {
-      const randomString = generateRandomString(15);
-      window.location.href = `https://MSCHFBounty.com/?r=${randomString}`;
-    }
-
-    window.onload = function () {
-      alert(
-        "Welcome to MSCHFBounty.com! \nUpdates are in progress and more features will be added soon. Please check back frequently and refresh the list to see updates when they're live."
-      );
-    };
   </script>
 </html>
